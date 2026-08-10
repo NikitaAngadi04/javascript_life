@@ -122,7 +122,7 @@ decrement*/
 // console.log("x>=y",x>=y);
 // console.log("x<=y",x<=y);
 
-//logival operators
+//logical operators
 // let a =9;
 // let b= 10;
 // let cond1 = a<b;//true
@@ -252,8 +252,119 @@ decrement*/
 //     //do some work
 // }
 
-let i = 1;
-while (i<=10);{
-    console.log("Hello js");
-    i++;
-}
+// let i = 1;
+// while (i<=10);{
+//     console.log("Hello js");
+//     i++;
+// }
+
+// //do while loop
+// do{
+//     //do some work
+// }while(condition);
+//let i =20;
+// do{
+//     console.log("Apna college");
+//     i++;
+// }while(i<=10);
+
+// let i = 1;
+// do{
+//     console.log("Apna college");
+//     i++;
+// }while(i<=5);
+
+//for-of loop
+//for(let val of strVar){
+   // do some work
+//}
+// let str = "JavaScript"
+// let size = 0;
+// for(let i of str){ //iterates characters
+//     console.log("i=",i);
+//     size++;
+// }
+// console.log("string size =", size);
+
+//for-in loop it will return only keys in object.
+// for(let key in objVar){
+//     do some work
+// }
+// let Student={
+//     name = "saikumar",
+//     age = 26,
+//     cgpa = 8.8,
+//     ispass:true,
+// };
+// for(let key in Student){
+//     console.log("key=",key ,"value=", Student[key])
+// }
+
+
+//Print all even numbers from 0 to 100.
+// for(let num = 0; num<=100; num++){
+//     if(num%2==0){
+//         console.log("num=", num);
+//     }
+// }
+
+//create a game where you satart with any random number.ask the user to keep
+//guessing the game number untill the user enters correct value.
+// let gameNum = 25;
+// let userNum = prompt("Guess the game number:");
+// while(userNum != gameNum){
+//     userNum=prompt("you entered wrong number, guess again:");
+// }
+// console.log("Congratulations, you entered the the right number");
+
+
+//Strings in js
+//string is a sequence of characters used to reprent text
+//create string
+//let str = "Apna college";
+//string length
+//str.length
+//string indices
+//str[0],str[1],str[2]
+//indices (position)-->pural
+//singular(position)-->singular
+
+//strings
+// let str ="somu priya";
+// let str2 ="shraddhha";
+// console.log(str[3]);//u
+
+//Template letrals
+// let specialstring = `this is a template litral`;
+// console.log(typeof specialstring)
+
+// let obj ={
+//     item :"pen",
+//     price:10
+// };
+// let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+// console.log(output);
+
+// template literals in js
+// a way to have embedded expressions in strings
+// `this is a template literal`
+
+// //string interpolation
+// //`string text${expression} string text`  //expression is called string interpolation
+
+
+// let str = "nikkita\tangadi";
+// console.log(str.length)
+// string in method in js
+// these are built in functions to manipulate s String
+// str.toUpperCase()
+// str.toLowerCase()
+// str.trim()#removes whitespace
+
+// let str = "millennium";
+// str.toUpperCase();
+// console.log(str)
+
+let str ="miennium";
+str.UpperCase();
+console.log()
