@@ -1,4 +1,4 @@
-//logival and operator
+//logical and operator
 let result = false && "hai"
 console.log(result)
 
