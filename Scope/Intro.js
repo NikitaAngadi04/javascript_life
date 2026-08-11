@@ -276,7 +276,7 @@ decrement*/
 
 //for-of loop
 //for(let val of strVar){
-   // do some work
+// do some work
 //}
 // let str = "JavaScript"
 // let size = 0;
@@ -365,6 +365,238 @@ decrement*/
 // str.toUpperCase();
 // console.log(str)
 
-let str ="miennium";
-str.UpperCase();
-console.log()
+// let str ="miennium";
+// str.UpperCase();
+// console.log()
+
+
+
+//Arrays
+
+// let marks = [99,100,80,56,67];
+// console.log(marks);
+// console.log(marks.length); //property
+
+// let marks = ["Nikita","Aruna","Heera"];
+// console.log(marks)
+
+//looping over an array
+// let marks= [85,97,44,37,76,60];
+// let sum =0;
+// for(let val of marks){
+//     sum =sum+val;
+// }
+// let avg = sum/marks.length;
+// console.log(`avg marks of the class = ${avg}`);
+
+
+// let items=[12,34,5,67,89,90,80]
+// let idx = 0;
+// for(let val of items){
+//     console.log(`value at index ${idx}=${val}`);
+//     id++;
+// }
+
+//array methods for example amezon website some sort of data stored in array
+//push():add to end
+//pop():delete from end and return
+//toString():converts array to string
+
+// //push
+// let items = ["poatao","chili", "mango"]
+// items.push("chips");
+// console.log(items)
+
+//pop
+// let items = ["poatao","chili", "mango"]
+// let deleteditem = items.pop();
+// console.log(items)
+// console.log("deleted",deleteditem)
+
+// let items = ["poatao","chili", "mango"]
+// console.log(items);
+// console.log(items.toString());
+
+//concat():joins multiple elements and returns result
+// let marvelHeros  = ["thor","spiderman","ironman"]
+// let dcHeros = ["superman","batman"]
+// let heros= marvelHeros.concat(dcHeros);
+// console.log(heros)
+
+//unshift():add to start like push
+// let marvelHeros  = ["thor","spiderman","ironman"]
+// marvelHeros.unshift("antman");
+
+//shit
+// let marvelHeros  = ["thor","spiderman","ironman"]
+// let val= marvelHeros.shift();
+// console.log("deleted",val);
+
+// //slice():returns a piece of the array
+// //slice(startidx,endidx)
+// let marvelHeros  = ["thor","spiderman","ironman","superman","batman"]
+// console.log(marvelHeros);
+// console.log(marvelHeros.slice(1,3))
+
+//splice():change original array(add, remove, replace)
+//spilce(startidx,delcount,newel1...)
+// let marvelHeros  = ["thor","spiderman","ironman","superman","batman"]
+// console.log(marvelHeros.splice(2,2))
+
+//add elemet
+//arr.spilce(2,0,101);
+
+//delete elemet
+//arr.spilce(3,1)
+
+//replace elemet
+//arr.splice(3,1,101)
+
+// let array  = [1,2,3,4,5,6,7]
+// array.splice(4,1);
+// console.log(array)
+
+// let companies = ["Bloomberg","microsoft","IBM","google","Netflix","uber"]
+// // companies.shift();
+// //companies.splice(2,1,"ola")
+// companies.push("amezon") ///add at the end
+
+
+//Functions in js
+//block of code that performs a specific task, can be invoked whenever needed
+// function myFunction(){
+//     console.log("welcome to apna college");
+//     console.log("we are learning js:")
+// }
+// myFunction();
+
+// function myFunction(msg){           //parametr-->input
+//     console.log(msg)
+// }
+// myFunction("Pavan is my BestFriend😍");
+
+// function add(a,b){
+//     console.log(a+b)
+// }
+// add(2,10);
+
+//Function parametrs like local variables of function.(block function)
+//Arrow Function: 
+// function sum(a,b){
+//     return a+b;
+// }
+
+// const arrowSum=(a,b)=>{
+//     console.log(a+b);
+// }
+// arrowSum(2,3);
+
+// const arrowMul=(a,b)=>{
+//     return a*b 
+// }
+let printHello = () => {
+    console.log("Hello");
+}
+
+//number of vowels
+function countVowels(str) {
+    let count = 0;
+    for (const char of str) {
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            count++;
+        }
+
+    }
+    console.log(count);
+}
+
+
+//For-each loop: arr.forEach(callbackFunction)
+// let arr=["pune","delhi","mumbai"];
+// arr.forEach((val)=>{
+//     console.log(val.toUpperCase());
+// });
+
+// let num = [1,2,3,4,5];
+// num.forEach((val)=>{
+//     console.log(val*val)
+// })
+
+//array iteration methods
+//1)Map():it will return new array the value its callback returns are used to form new array
+//Array.map(useCallbackfunction(Value,index,array))
+// let nums = [67,52,39];
+// nums.map((val)=>{
+//     console.log(val);
+// });
+
+
+// let nums = [67,52,39];
+// let newArr=nums.map((val)=>{
+//     return val * val;
+// });
+// console.log(newArr)
+
+// let numbers = [10,20,30,40,50]
+// let updatednumbers=numbers.map((value)=>value+10)
+//     console.log(updatednumbers);
+
+
+// let numbers = [10,20,30,40,50]
+// let updatednumbers=numbers.map((value)=>value*2)
+// console.log(updatednumbers);
+// console.log(numbers)
+
+// let arr=[10,20,30,40,50]
+// let arr2=arr.map((value)=>value+1)
+// console.log(arr2)
+
+// let arr1=[3,4,56,7];
+// let newarr=arr1.map((val)=>{
+//     return val/4
+// });
+// console.log(newarr);
+
+
+//filter():creates a new array of elemts that gives true for a condition/filter.
+//example:all even elements
+//syntax
+//let newarr=arr.filter((val)=>{
+//     return val%2===0;
+// })
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+// let evenarr=arr.filter((val)=>{
+//     return val%2===0;
+// });
+// console.log(evenarr)
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+// let newarr=arr.filter((val)=>{
+//     return val%2!=0;
+// });
+// console.log(newarr)
+
+
+//reduce():performs some operations and reduces the array to a single value. it returns that singlevalue.
+// let arr = [1,2,3,4]
+// let sum = arr.reduce((accumulator, currentValue)=>{
+//     return accumulator+currentValue
+// },2);
+// console.log(sum)
+
+//max
+// let arr = [1,2,3,4]
+// let sum = arr.reduce((accumulator, currentValue)=>{
+//     return accumulator > currentValue ? accumulator : currentValue;
+// });
+// console.log(sum)
+
+// let arr = [12,34,67,90,99,89,79,109]
+// let newArr=arr.filter((val)=>{
+//     return val>90;
+// });
+// console.log(newArr)
+
+//window object automaticallly created by browser
+//DOM: when a web page is loaded , the browser creates a document object model of the page
