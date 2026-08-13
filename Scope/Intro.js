@@ -353,7 +353,7 @@ decrement*/
 // //`string text${expression} string text`  //expression is called string interpolation
 
 
-// let str = "nikkita\tangadi";
+// let str = "nikkita\angadi";
 // console.log(str.length)
 // string in method in js
 // these are built in functions to manipulate s String

@@ -110,14 +110,14 @@
 // console.log(fact(f))
 
 //callback function: whenever a function is passed into another function as a argument
-function print(name, fun){
-    console.log(name);
-    fun();
-}
-function greet(){
-    console.log("welcome to party")
-}
-print("ramu",greet)
+// function print(name, fun){
+//     console.log(name);
+//     fun();
+// }
+// function greet(){
+//     console.log("welcome to party")
+// }
+// print("ramu",greet)
 
 
 // function calci(num1,num2,task){
@@ -129,49 +129,67 @@ print("ramu",greet)
 // calci(10,20,add)
 
 
-function calci(num1,num2,task){
-    task(num1,num2)
-}
-function div(a,b){
-    console.log(a/b);
-}
-function mul(a,b){
-   console.log(a*b);
-}
-function add(a,b){
-    console.log(a+b);
-}
-function sub(a,b){
-   console.log(a-b);
-}
-calci(10,20,sub)
+// function calci(num1,num2,task,task1){
+//     task(num1,num2)
+//     task1(num1,num2)
+// }
 
-//higher order function : which accept another function as parameter
+// function add(a,b){
+//     console.log(a+b);
+// }
+// function sub(a,b){
+//     console.log(a-b);
+    
+// }
+// calci(10,20,add,sub)
+
+
+// higher order function : which accept another function as parameter
 function main(callback){
     console.log("iam main function")
     callback()
 }
+
 main(function print(){
     console.log("iam callback function")
 })
 
-function ordering(name, veg, Takeaway){
-    console.log("welcome to restorent")
-    veg(Takeaway)
-}
-function nonveg(){
-    console.log("...............");
-    console.log("your biriyani is getting ready"+name);
-    console.log("...............");
-    console.log("your biriyani is ready");
-}
-function veg(task){
-    console.log("...............")
-    console.log("your veg-biriyani is getting ready");
-    task()
-}
-function Takeaway(){
-    console.log("your Parcel is ready")
-}
-ordering('Zayan',veg,Takeaway)
+// function greet(name,callback){
+//     console.log("Hello",name)
+//     callback()
+// }
+// function saybye(){
+//     console.log("Goodbye!");
+// }
+// greet("Nikita",saybye);
+
+// function calculate(a, b, callback) {
+//     callback(a, b);
+// }
+// calculate(10, 20, function(x, y) {
+//     console.log(x + y);
+// });
+
+
+
+
+// function ordering(name, veg, Takeaway){
+//     console.log("welcome to restorent")
+//     veg(Takeaway)
+// }
+// function nonveg(){
+//     console.log("...............");
+//     console.log("your biriyani is getting ready"+name);
+//     console.log("...............");
+//     console.log("your biriyani is ready");
+// }
+// function veg(task){
+//     console.log("...............")
+//     console.log("your veg-biriyani is getting ready");
+//     task()
+// }
+// function Takeaway(){
+//     console.log("your Parcel is ready")
+// }
+// ordering('Zayan',veg,Takeaway)
  
