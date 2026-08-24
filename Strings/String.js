@@ -33,22 +33,22 @@
 // console.log(Name2)
 // console.log(Name2.length-1)
 
-// //string methods
-// //static methods
-// //unicode
+//*string methods
+//*static methods
+//*unicode
 // let output = String.fromCharCode(74,97,118,97,83,99,114,105,112,116)
 // console.log(output)
 
-// //1.fromcharcode
+//*1.fromcharcode
 // console.log(String.fromCharCode(128583))//-->it has limit above 65,000 it will not give proper 
-// //2.fromcodepoint
+//*2.fromcodepoint
 // console.log(String.fromCodePoint(128583))
 
-//*Raw 
+//*3.Raw 
 // let str = String.raw`hello\nworld ${7+1}`
 // console.log(str)
 
-//*3.instance methods : at -->it also works wit negative indicies
+//&3.instance methods : at -->it also works wit negative indicies
 // let a = "Nikita"
 // console.log(a.at(-3))
 
@@ -56,14 +56,14 @@
 // let s = "Mom"
 // console.log(s.charAt(2))
 
-//*charcode
+//^charcode
 // let d = "ZavaScript"
 // console.log(d.charCodeAt(6))
 
 // let d1 = "Z"
 // console.log(d1.charCodeAt(0))
 
-//*4.concat: one or more strings writtern new string
+//~4.concat: one or more strings writtern new string
 // let out1 = "hello"
 // let out2 = "how are you"
 // console.log(out1.concat(" ",out2))
@@ -73,8 +73,8 @@
 // console.log(greet.includes("to",9))
 
 //*6.indexof
-// let greet1 = "welcome to class to"
-// console.log(greet1.indexOf("to",7))
+let greet1 = "welcome to class to"
+console.log(greet1.indexOf("to",8))
 
 //*7.lastIndexOf
 // let data4 = "welcome to class  to"
@@ -150,7 +150,7 @@
 // let str = new String("Hello")
 // console.log(typeof str.toString())
 
-//&slice accept -ve index,if first index is greater thn second it will throw error
+//slice accept -ve index,if first index is greater thn second it will give empty string
 // let str = "welcome to javascript life"
 // console.log(str.slice(8))
 // console.log(str.slice(8,21))
@@ -177,17 +177,53 @@
 //&8.change only the first charcater to uppercase.
 //*9.swap the first character and last character.
 
-//!1.remove all the spaces from the strings
-let str = "welcome to javascript life"
-console.log(str.replaceAll(" ", ""))
+// //!1.remove all the spaces from the strings
+// let str = "welcome to javascript life"
+// console.log(str.replaceAll(" ", ""))
 
-//^2.Remove wel from the string
-let str = "welcome to javascript life"
-console.log(str.slice(3))
+// //^2.Remove wel from the string
+// let str = "welcome to javascript life"
+// console.log(str.slice(3))
 
-//!3.remove first and last charcter from the string
-let str = "welcome to javascript life"
-console.log(str.slice(1,25))
+// //!3.remove first and last charcter from the string
+// let str = "welcome to javascript life"
+// console.log(str.slice(1,25))
+
+//*4.check weather the first charcater and last character are same.
+// let str = "welcome to javascript life";
+
+// if (str[0] == str[str.length - 1]){
+//      console.log("Same");
+// }   else {
+//    console.log("Different");
+// }
+
+//&5.count how many a is occered
+// let str = "welcome to javascript life";
+// let ch = "a"
+// let count = 0
+// for(let c of str){
+//     if (c==ch){
+//         count++;
+//     }  
+// } 
+// console.log(count)
+
+//~6.replace space with backslash
+// let str = "welcome to javascript life";
+// console.log(str.replaceAll(" ", "\"));
+
+//^7.find the middle charcter of the string
+// let str = "welcome to javascript life";
+// console.log(str.slice(str.length/2,str. length/2+1))
+
+//&8.change only the first charcater to uppercase.
+// let str = "welcome to javascript life";
+// console.log(str.charAt(0).toUpperCase()+str.slice(1));
+
+//*9.swap the first character and last character.
+// let str = "welcome to javascript life";
+// console.log(str.at(-1)+str.slice(1,-1)+str[0]);
 
 
 
@@ -196,3 +232,12 @@ console.log(str.slice(1,25))
 
 
 
+
+
+
+
+
+
+//^if spaces bw keys directlu use square braces
+//^method : which specifies only tht example:string
+//^function :

@@ -193,3 +193,93 @@ main(function print(){
 // }
 // ordering('Zayan',veg,Takeaway)
  
+// //^ ARRAY DESTRUCTURING
+// let array = ['pink', 'blue', 'red', 'orange', 'yellow']
+// console.log(array[2]);
+// console.log(array[3]);
+// let [p,b,r,o,y] = array
+// console.log(p);
+// console.log(b);
+// console.log(y);
+
+// let branch = ['ise','civil','mech']
+// console.log(branch[2]);
+
+// let[i,c,m] = branch
+// let[,c,] = branch //&--> to get a particular value(works on positions)
+// console.log(c);
+
+// let [a,b] = [12,45] //& --> can also be done like this
+// console.log(a,b);
+
+// ! DEFAULT VALUE
+// let [a,b,c = "35"] = [12,45]
+// console.log(c);
+
+// ~ SWAPPING using destructuring
+// let a = 4;
+// let b = 8;
+// [b,a] = [a,b];
+// console.log(b)
+// console.log(a);
+
+// ! NESTED ARRAY
+// let array = ['pink', 'blue', 'red', ['orange', 'yellow']]
+// let [p,b,r,[o,y]] = array
+// console.log(p);
+// console.log(y);
+
+//  * OBJECT DESTRUCTURING
+// let object = {
+//     name : "purav",
+//     age : 12,
+//     flag : true,
+//     address : {
+//         city : 'Ballari'
+//     }
+// }
+// let {name,age,flag,address} = object
+// console.log(name);
+// console.log(age);
+// console.log(flag);
+// console.log(address);
+// console.log(address.city);
+
+//  * NESTED OBJECT DESTRUCTURING
+//  let object = {
+//     name : "purav",
+//     age : 12,
+//     flag : true,
+//     address : {
+//          city : 'Ballari'
+//     }
+// }
+// let {name,age,flag,address:{city}} = object
+// console.log(name);
+// console.log(age);
+// console.log(flag);
+// console.log(city);
+
+// let{name:fullName} = object
+// console.log(fullName) ;
+
+
+
+// let userData = [
+//     {
+//         "id": 1,
+//         "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+//         "price": 109.95,
+//         "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve.",
+//         "category": "men's clothing",
+//         "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+//         "rating": {
+//             "rate": 3.9,
+//             "count": 12,
+//             "skills":['java','python','sql']
+//         }
+//     }
+// ];
+// let [{id,title,price,rating:{rating,count:[j,p,s]}}] = userData
+// console.log(j);
+// console.log(userData[1].rating.count);
